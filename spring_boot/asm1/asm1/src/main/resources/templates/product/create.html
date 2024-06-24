@@ -8,7 +8,7 @@
 <body>
 <div class="container mt-4">
     <h2>Create Product</h2>
-    <form action="/product" method="post" enctype="multipart/form-data" class="mb-4">
+    <form action="/product/create" method="post" enctype="multipart/form-data" class="mb-4">
         <div class="mb-3">
             <label for="code" class="form-label">Code:</label>
             <input type="text" id="code" name="code" class="form-control">
@@ -20,6 +20,12 @@
         <div class="mb-3">
             <label for="description" class="form-label">Description:</label>
             <textarea id="description" name="description" class="form-control"></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="category" class="form-label">Category:</label>
+            <select id="category" name="category.id" class="form-control">
+                <option th:each="category : ${categories}" th:value="${category.id}" th:text="${category.name}"></option>
+            </select>
         </div>
         <div class="mb-3">
             <label for="image" class="form-label">Image:</label>

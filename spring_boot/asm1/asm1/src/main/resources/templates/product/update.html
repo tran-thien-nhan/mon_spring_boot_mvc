@@ -23,6 +23,12 @@
             <textarea id="description" name="description" class="form-control" th:text="${product.description}"></textarea>
         </div>
         <div class="mb-3">
+            <label for="category" class="form-label">Category:</label>
+            <select id="category" name="category.id" class="form-control">
+                <option th:each="category : ${categories}" th:value="${category.id}" th:text="${category.name}" th:selected="${category.id == product.category.id}"></option>
+            </select>
+        </div>
+        <div class="mb-3">
             <label for="image" class="form-label">Image:</label>
             <div>
                 <img th:src="@{'/uploads/' + ${product.image}}" alt="Current Image" width="100" height="100" class="img-thumbnail mb-2">

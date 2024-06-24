@@ -3,6 +3,7 @@ package asm.asm1.Service;
 import asm.asm1.Model.Product;
 import asm.asm1.Repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -99,4 +100,13 @@ public class ProductService {
         }
         return false;
     }
+
+    public List<Product> getAllProductsSortedByIdAsc() {
+        return productRepository.findAll(Sort.by(Sort.Direction.ASC, "id"));
+    }
+
+    public List<Product> getAllProductsSortedByIdDesc() {
+        return productRepository.findAll(Sort.by(Sort.Direction.DESC, "id"));
+    }
+
 }
