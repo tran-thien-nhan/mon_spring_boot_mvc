@@ -13,19 +13,16 @@
     <h2 class="mb-4">LOGIN</h2>
     <div class="row">
         <div class="col-md-6">
-            <form action="/home/login" method="post">
+            <form action="/account/login" method="post">
                 <div class="mb-3">
                     <label for="inputEmail" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="inputEmail" name="email" placeholder="Enter your email" required>
+                    <input type="text" class="form-control" id="inputEmail" name="email" placeholder="Enter your email">
                 </div>
                 <div class="mb-3">
                     <label for="inputPassword" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="inputPassword" name="password" placeholder="Enter your password" required>
+                    <input type="password" class="form-control" id="inputPassword" name="password" placeholder="Enter your password">
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
-                <div class="mt-3">
-                    <span th:if="${error}" class="text-danger">Invalid email or password. Please try again.</span>
-                </div>
             </form>
         </div>
     </div>

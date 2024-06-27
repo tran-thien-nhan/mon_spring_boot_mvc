@@ -23,22 +23,17 @@ public class UserController {
     }
 
     @PostMapping("/login")
-    public String checkLogin(@ModelAttribute User user, HttpSession session, Model model) {
+    public String checkLogin(@ModelAttribute User user, Model model) {
         try {
-            if (userService.checkLogin(user.getUsername(), user.getPassword())) {
-                User loggedInUser = userService.getUserByUsernameAndPassword(user.getUsername(), user.getPassword());
-                session.setAttribute("loggedInUser", loggedInUser);
-
-                if ("admin".equals(loggedInUser.getRole())) {
-                    return "redirect:/home/users"; // Redirect to user list page for admin
-                }
-                return "redirect:/product"; // Redirect to product list page for regular user
+            if (userService.checkLogin(user.getEmail(), user.getPassword())) {
+                User loggedInUser = userService.getUserByUsernameAndPassword(user.getEmail(), user.getPassword());
+                return "redirect:/home/create"; // Redirect to the create page
             }
-            model.addAttribute("error", true);
+            model.addAttribute("error", "Invalid email or password.");
             return "home/login"; // Redirect back to login page with error
         } catch (Exception e) {
-            // Redirect to error page in case of exception
-            return "home/error";
+            model.addAttribute("error", "An error occurred. Please try again.");
+            return "home/error"; // Redirect to error page in case of exception
         }
     }
 
@@ -59,5 +54,17 @@ public class UserController {
         List<User> users = userService.getAllUsers();
         model.addAttribute("users", users);
         return "home/list"; // Placeholder return statement
+    }
+
+    @GetMapping("/create")
+    public String showFormCreateUser(Model model) {
+        model.addAttribute("user", new User());
+        return "home/create"; // Placeholder return statement
+    }
+
+    @PostMapping("/create")
+    public String createUser(@ModelAttribute User user) {
+        userService.createUser(user);
+        return "redirect:/home/users"; // Redirect to the users page
     }
 }

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="698416dc-9b0a-4ca0-8b5d-c4bf0550546d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/spring_boot.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asm1/asm1/src/main/resources/templates/home/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thi/.idea/thi.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thi/thi/src/main/java/Controller/AccountController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thi/thi/src/main/java/thi/thi/Model/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thi/thi/src/main/java/thi/thi/Repository/AccountRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thi/thi/src/main/java/thi/thi/Service/AccountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thi/thi/src/main/resources/templates/account/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thi/thi/src/main/resources/templates/account/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asm1/asm1/src/main/java/asm/asm1/Controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/asm1/asm1/src/main/java/asm/asm1/Controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asm1/asm1/src/main/java/asm/asm1/Repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/asm1/asm1/src/main/java/asm/asm1/Repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asm1/asm1/src/main/java/asm/asm1/Service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/asm1/asm1/src/main/java/asm/asm1/Service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asm1/asm1/src/main/resources/templates/home/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/asm1/asm1/src/main/resources/templates/home/login.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2iMPpVNjzJdj08HIe9CylMPizaq" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="698416dc-9b0a-4ca0-8b5d-c4bf0550546d" name="Changes" comment="" />
+      <created>1719297664412</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1719297664412</updated>
+      <workItem from="1719297664412" duration="13000" />
+      <workItem from="1719302041025" duration="18000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
